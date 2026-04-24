@@ -116,6 +116,81 @@ a {
   display: inline-block;
 }
 
+.hero-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #0f766e;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+/* SHINE LAYER */
+.hero-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+/* HOVER */
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.hero-btn:hover::before {
+  left: 100%;
+}
+
+.view-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #0f766e;
+  color: #fff;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+/* SHINE LAYER */
+.view-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+/* HOVER */
+.view-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.view-btn:hover::before {
+  left: 100%;
+}
 .services {
   padding: 100px 20px;
   background: #f9f9f9;
